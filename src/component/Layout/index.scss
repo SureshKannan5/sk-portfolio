@@ -73,11 +73,11 @@
 .mobile
   {
   .container {
+    position: absolute;
     width: 100%;
     will-change: contents;
     height: auto;
-    overflow: hidden;
-    min-height: 800px;
+    min-height: 700px;
     position: absolute;
     opacity: 0;
     top: 5%;
@@ -91,7 +91,7 @@
     .text-zone{
       position: absolute;
       left:10%;
-      top:30%;
+      top:20%;
       vertical-align: middle;
       display: table-cell;
       height: auto;
@@ -135,9 +135,8 @@
   .about-page{
     .text-zone{
       position: absolute;
-      left:10%;
+      left:15%;
       top:40%;
-      width: 55%;
       vertical-align: middle;
       display: table-cell;
       height: auto;
@@ -149,7 +148,6 @@
         font-weight: 400;
         margin-top: 0;
         position: relative;
-        margin-bottom: 40px;
         left:10px;
       }
     }
