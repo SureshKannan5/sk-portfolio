@@ -1,0 +1,61 @@
+{
+  "homepage": "https://skaynaruto.github.io/sk-portfolio",
+  "name": "personel-portfolio",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/material": "^5.8.7",
+    "animate.css": "^4.1.1",
+    "cra-template": "1.2.0",
+    "css-loader": "^6.7.1",
+    "emailjs-com": "^3.2.0",
+    "gsap-trial": "^3.10.4",
+    "leaflet": "^1.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-gsap": "^3.2.1",
+    "react-loader": "^2.4.7",
+    "react-material-ui-form-validator": "^3.0.1",
+    "react-responsive": "^9.0.0-beta.10",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-tooltip": "^4.2.21",
+    "sass": "^1.53.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

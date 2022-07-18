@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.nav-bar {
+  display: inline-block;
+    background: transparent;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+  
+    .logo {
+      position:absolute;
+      top:5px;
+      left:10px;
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      a{
+        position: relative;
+        top:15px;
+        font-size: 20px;
+        border-left: 5px solid rgb(226, 16, 9);
+        padding-right: 5px;
+        height: 20px;
+      }
+      .sub-logo{
+        color:#ffffff;
+        width:50px;
+        font-family: 'Press Start 2P', cursive;
+      }
+    }
+    nav.mobile {
+      text-align: center;
+      float: right;
+      display: flex;
+      justify-content: center;
+      height: auto;
+      width:auto;
+      a {
+        font-size: 22px;
+        display:flex;
+        justify-content: center;
+        align-content: space-between;
+        line-height: 51px;
+        height: 51px;
+        padding:20px 20px;
+        text-decoration: none;
+      }
+    }
+  
+    nav.desktop {
+      text-align: center;
+      float: right;
+      display: flex;
+      justify-content: center;
+      height: auto;
+      width:auto;
+      a {
+        font-size: 22px;
+        display:flex;
+        justify-content: center;
+        align-content: space-between;
+        line-height: 51px;
+        height: 51px;
+        padding:20px 50px;
+        text-decoration: none;
+  
+        i {
+          transition: all 0.3s ease-out;
+        }
+  
+        &:hover {
+          color: #ffffff;
+  
+          svg {
+            opacity: 0;
+          }
+  
+          &:after {
+            opacity: 1;
+          }
+        }
+  
+        &:after {
+          content: '';
+          font-size: 15px;
+          letter-spacing: 2px;
+          position: absolute;
+          bottom: 0;
+          display: block;
+          text-align: center;
+          opacity: 0;
+          -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+        }
+  
+        &:first-child {
+          &:after {
+            content: 'HOME';
+          }
+        }
+      }
+  
+      a.about-link {
+        &:after {
+          content: 'ABOUT';
+        }
+      }
+  
+      a.contact-link {
+        &:after {
+          content: 'CONTACT';
+        }
+      }
+  
+      a.active {
+        svg {
+          color: #f04916ef;
+        }
+      }
+    }
+  .socialicons{
+    position: absolute;
+    top:300px;
+    margin-left: 10px;
+    height: auto;
+  }
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      list-style: none;
+  
+      li {
+        a {
+          padding: 10px 0;
+          display: block;
+          font-size: 20px;
+          line-height: 16px;
+          color: #4d4d4e;
+        }
+      }
+    }
+  }
